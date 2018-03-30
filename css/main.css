@@ -1,7 +1,8 @@
 #body{
   -webkit-font-smoothing: antialiased;
   color:#fff;
-  background: radial-gradient(ellipse at bottom, #1C2837 0%, #050608 100%), url(../img/Star-Pic.png);
+  background: radial-gradient(ellipse at bottom, #1C2837 10%, #050608 100%), url('../img/Star-Pic.png') repeat;
+  /****Why isn't the img displaying on screen as overlay?*/
   background-attachment:fixed;
 }
 
@@ -25,15 +26,6 @@ section {
 
 #info {
   margin: 2em 0 0 40em;
-  z-index: 1;
-}
-
-@media only screen and (min-width: 32em) {
-  p {
-    line-height: 1.75em;
-    margin-bottom: 1.75em; /* match the line height */
-    /* grow the font-size with the available width, 1.5em is the maximum font size */
-  }
 }
 
 .myBtn {
@@ -61,20 +53,25 @@ section {
   box-shadow: 0 0 40px #FFE9D5;
 }
 
-#planets .sun {
+#sun {
   transform: scale(1.2, 1.2);
   -ms-transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2);
   float: left;
   margin-left: -300px;
-  z-index: -1;
+  margin-top: -40px;
 }
+
+/* #planets {
+  box-shadow: none;
+} */
+
 #planets .mercury {
   transform: scale(0.1, 0.1);
   -ms-transform: scale(0.1, 0.1);
   -webkit-transform: scale(0.1, 0.1);
   margin-left: -310px;
-  margin-top: -65px;
+  margin-top: -110px;
   z-index: -1;
 }
 #planets .venus {
@@ -134,9 +131,37 @@ section {
   z-index: -1;
 }
 
+/* #planets .solarsystem{
+  box-shadow: 0 0 40px #FFE9D5;
+} */
+
 #planet-names {
   font-size: 12px;
   max-width: 550px;
-  margin-top: -450px;
+  margin-top: -470px;
   margin-left: 550px;
+}
+
+
+@media only screen and (max-width: 768px){
+  #planets{
+    visibility :hidden;
+  }
+  #info{
+    margin-left: 40px;
+    z-index: 1;
+  }
+  #sun{
+    position: absolute;
+    z-index: -1;
+  }
+  element.style{
+
+  }
+}
+
+@media only screen and (max-width: 992px){
+  #info{
+    margin-left: 150px ;
+  }
 }

@@ -41,19 +41,16 @@ var planets = [mercury, venus, earth, mars, jupiter, saturn, uranus, neptune];
 //write the click function first
 function showInfo(){
 
-//remove whats in div in first place.
-//this is here to clear out the div every time after the first time. This way you don't have multiple planets after each click.
+//Remove whats in div in first place. This is here to clear out the div every time after the first time. This way you don't have multiple planets after each click.
 document.getElementById('planet-names').innerHTML= '' ;
 
    //grab the input
-   var userInput = document.getElementById('planet').value;
+   var userInput = document.getElementById('planetInput').value;
    console.log(userInput);
 
- //Match input to one of our objects. Loop through and return a match
+ // Match input to one of our objects. Loop through and return a match
  for(var i=0; i<planets.length; i++) {
    if(userInput.toLowerCase() === planets[i].name) { //do we have a match?
-     //call second function nested inside this one
-     // resizePlanet();
 
    var header = document.createElement('h5');
    header.setAttribute('style', 'padding: 5px; text-transform:uppercase; text-align:center');
@@ -65,9 +62,6 @@ document.getElementById('planet-names').innerHTML= '' ;
    header.textContent = planets[i].name;
    paragraph.textContent = planets[i].text;
 
-   document.getElementById('planets').value;
-
-
    //add head and p to our div
    div.appendChild(header);
    div.appendChild(paragraph);
@@ -75,14 +69,33 @@ document.getElementById('planet-names').innerHTML= '' ;
    //display to user
    var planetName = document.getElementById('planet-names');
    planetName.appendChild(div);}
+
+
+
+//2nd onclick event to fire and highlight chosen planet's img
+// $('.' + userInput).css("box-shadow", "0 0 40px #FFE9D5");
+// //Clear and reset function every time I click the button
+    // $("button").click(function(){
+    //     $(this).remove("box-shadow");
+    // });  maybe use setAttribute?   newBtn.setAttribute('onclick', 'deleteComment(this)');
+
+
+//***Add this text to display if the user does not input a correct planet name? Need some logic to check if in the for loop if nothing matches.
     // } else{
     //   document.getElementById('planet-names').innerHTML = "Please enter the name of a planet.";}
   }
-}
+};
 
-//highlight planet user chooses with a 2nd function?
-// function resizePlanet(){
-//   if(userInput.toLowerCase() === planets[i].name) {
-//     planets.setAttribute('style', "box-shadow:0px 12px 22px 1px #333");
-//   }
-// }
+// function toggleClass(){
+//   var userInput = document.getElementById('planetInput').value;
+//   for(var i=0; i<planets.length; i++) {
+//   if(userInput.toLowerCase() === planets[i].name) { //do we have a match?
+//     document.getElementById('planets').src;
+//     imgSource.setAttribute= ("style", "box-shadow: 0 0 40px #FFE9D5");
+//   } else{
+//     var imgSource= document.getElementById('planets').src;
+//     imgSource.setAttribute= ("style", "box-shadow: none");
+//   };
+//   };
+// };
+// };
