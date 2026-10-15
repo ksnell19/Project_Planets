@@ -2,7 +2,9 @@
   -webkit-font-smoothing: antialiased;
   color:#fff;
   
-  background: radial-gradient(ellipse at bottom, #1C2837 10%, #050608 100%), url('../img/Star-Pic.png'); 
+  background: radial-gradient(ellipse at bottom, #1C2837 10%, #050608 100%), 
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url('../img/Star-Pic.png'); 
   background-repeat: no-repeat, repeat;
   background-attachment: fixed;
   background-blend-mode: screen;
