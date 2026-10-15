@@ -2,7 +2,7 @@
   -webkit-font-smoothing: antialiased;
   color:#fff;
   background: radial-gradient(ellipse at bottom, #1C2837 10%, #050608 100%), url('../img/Star-Pic.png') repeat;
-  /****Why isn't the img displaying on screen as overlay?*/
+  /* Why isn't the img displaying on screen as overlay? */
   background-attachment:fixed;
 }
 
@@ -64,6 +64,7 @@ section {
 
 #planets {
   position: relative;
+  height: 500px;
   box-shadow: none;
 }
 
@@ -112,8 +113,10 @@ section {
   transform: scale(0.3, 0.3);
   -ms-transform: scale(0.3, 0.3);
   -webkit-transform: scale(0.3, 0.3);
-  margin-top: -1600px;
-  margin-left: 700px;
+  /* margin-top: -1600px;
+  margin-left: 700px; */
+  top: 50px;
+  left: 700px;
   z-index: -1;
   background-color: transparent !important;
 }
