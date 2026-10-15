@@ -62,9 +62,10 @@ section {
   margin-top: -40px;
 }
 
-/* #planets {
+#planets {
+  position: relative;
   box-shadow: none;
-} */
+}
 
 #planets .mercury {
   transform: scale(0.1, 0.1);
