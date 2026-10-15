@@ -112,7 +112,7 @@ section {
   -webkit-transform: scale(0.3, 0.3);
   margin-top: -1600px;
   margin-left: 700px;
-  z-index: 1;
+  z-index: -1;
 }
 #planets .uranus {
   transform: scale(0.2, 0.2);
@@ -129,6 +129,7 @@ section {
   margin-top: -1400px;
   margin-left: 1050px;
   z-index: -1;
+  background: transparent;
 }
 
 /* #planets .solarsystem{
