@@ -1,4 +1,4 @@
-#body{
+body{
   -webkit-font-smoothing: antialiased;
   color:#fff;
   background: url('../img/Star-Pic.png') repeat, radial-gradient(ellipse at bottom, #1C2837 10%, #050608 100%);
