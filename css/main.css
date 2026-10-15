@@ -5,7 +5,7 @@
   background-image: radial-gradient(ellipse at bottom, #1C2837 10%, #050608 100%), url('../img/Star-Pic.png'); 
   background-repeat: no-repeat, repeat;
   background-attachment: fixed;
-  background-blend-mode: overlay;
+  background-blend-mode: multiply;
 }
 
 h1 {
