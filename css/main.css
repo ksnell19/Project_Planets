@@ -4,7 +4,7 @@
   
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), radial-gradient(ellipse at bottom, #1C2837 10%, #050608 100%), url('../img/Star-Pic.png'); 
   background-repeat: no-repeat, no-repeat, repeat;
-  background-attachment:fixed;
+  background-attachment: fixed;
   background-blend-mode: normal, screen;
 }
 
