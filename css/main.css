@@ -109,7 +109,7 @@ section {
   z-index: -1;
 }
 #planets .saturn {
-  position: absolute;
+
   transform: scale(0.3, 0.3);
   -ms-transform: scale(0.3, 0.3);
   -webkit-transform: scale(0.3, 0.3);
