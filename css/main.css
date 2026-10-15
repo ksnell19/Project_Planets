@@ -108,7 +108,7 @@ section {
 }
 #planets .saturn {
   transform: scale(0.3, 0.3);
-  -ms-transform: scale(0.3, 0.3);
+ 
   -webkit-transform: scale(0.3, 0.3);
   margin-top: -1600px;
   margin-left: 700px;
