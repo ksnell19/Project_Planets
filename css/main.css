@@ -118,7 +118,7 @@ section {
   /* top: 50px;
   left: 700px; */
   z-index: -1;
-  background-color: transparent !important;
+  
 }
 #planets .uranus {
   transform: scale(0.2, 0.2);
