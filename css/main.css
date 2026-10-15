@@ -1,9 +1,11 @@
 #body{
   -webkit-font-smoothing: antialiased;
   color:#fff;
-  background: url('../img/Star-Pic.png') repeat, radial-gradient(ellipse at bottom, #1C2837 10%, #050608 100%);
+  background-image: radial-gradient(ellipse at bottom, #1C2837 10%, #050608 100%), url('../img/Star-Pic.png'); 
+  background-repeat: no-repeat, repeat;
   /* Why isn't the img displaying on screen as overlay? */
   background-attachment:fixed;
+  background-blend-mode: screen;
 }
 
 h1 {
