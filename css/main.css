@@ -107,13 +107,14 @@ section {
   z-index: -1;
 }
 #planets .saturn {
+  position: absolute;
   transform: scale(0.3, 0.3);
- 
+  -ms-transform: scale(0.3, 0.3);
   -webkit-transform: scale(0.3, 0.3);
   margin-top: -1600px;
   margin-left: 700px;
   z-index: -1;
-  background: transparent;
+  background-color: transparent !important;
 }
 #planets .uranus {
   transform: scale(0.2, 0.2);
